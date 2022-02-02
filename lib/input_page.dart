@@ -1,9 +1,11 @@
+import 'package:brand_new_bmi/height_page.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'constance.dart';
 import 'reuseable_card.dart';
 import 'icon_page.dart';
 import 'bottom_button.dart';
+import 'height_page.dart';
 
 class InputPage extends StatefulWidget {
 
@@ -77,6 +79,7 @@ class _InputPageState extends State<InputPage> {
           Expanded(
             child: ReuseableCard(
               color: kActiveColor,
+              cardChild: HeightCard(),
             ),
           ),
           Expanded(
