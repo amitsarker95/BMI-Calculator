@@ -1,3 +1,4 @@
+import 'package:brand_new_bmi/age.dart';
 import 'package:brand_new_bmi/height_page.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -6,6 +7,8 @@ import 'reuseable_card.dart';
 import 'icon_page.dart';
 import 'bottom_button.dart';
 import 'height_page.dart';
+import 'weight.dart';
+import 'age.dart';
 
 class InputPage extends StatefulWidget {
 
@@ -25,9 +28,12 @@ class _InputPageState extends State<InputPage> {
         title: const Text(
           'BMI CALCULATOR',
           style: TextStyle(
+            color: Color(0xFF8da099),
             fontSize: 24.0,
             fontWeight: FontWeight.bold,
-            color: Colors.white,
+            wordSpacing: 8.0,
+            letterSpacing: 2.0,
+
           ),
         ),
       ),
@@ -88,11 +94,13 @@ class _InputPageState extends State<InputPage> {
                 Expanded(
                   child: ReuseableCard(
                     color: kActiveColor,
+                    cardChild: WeightCard(),
                   ),
                 ),
                 Expanded(
                   child: ReuseableCard(
                     color: kActiveColor,
+                    cardChild: AgeCard(),
                   ),
                 ),
               ],

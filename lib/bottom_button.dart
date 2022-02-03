@@ -14,8 +14,10 @@ class BottomButton extends StatelessWidget {
           'CALCULATE YOUR BMI',
           style: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 24.0,
-            color: Colors.white,
+            fontSize: 22.0,
+            color: Color(0xFFe0d5d6),
+            letterSpacing: 2.0,
+            wordSpacing: 3.0,
           ),
         ),
       ),

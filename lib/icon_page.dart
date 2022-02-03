@@ -10,12 +10,13 @@ class IconPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Icon(
           icon,
           size: 80.0,
         ),
-        const SizedBox(height: 15.0),
+        const SizedBox(height: 18.0),
 
         Text(label.toString(),
         style: kLabelTextStyle, ),
